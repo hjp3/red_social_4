@@ -6,7 +6,7 @@
   if ($_POST) {
       $errores = validarDatosLogin($_POST);
       if(empty($errores)){
-          if(comprobarLogin($_POST['email'], $_POST['password'])){
+         
               // if(!empty($_POST['acordate'])){
               //   //setcookie("email",$_POST['email'],time()+(10*365*24*60*60));
               //   //setcookie("password",$_POST['password'],time()+(10*365*24*60*60));
@@ -23,7 +23,7 @@
               header("Location:bienvenida.php");
           }
           
-      }
+      
   }
   else{
     if ($_SESSION['login']) {

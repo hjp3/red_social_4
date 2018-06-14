@@ -1,3 +1,15 @@
+<?php
+if($_POST){
+  $errores = validarDatosLogin($_POST);
+
+  foreach ($errores as $key => $value) {
+    # code...
+  }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 

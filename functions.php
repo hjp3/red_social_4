@@ -44,7 +44,9 @@ function validarDatosLogin($datos){
     $errores["password"]= "Por favor ingrese una contraseña";
   }
   
-
+  if(!comprobarLogin($datos['email'],$datos['password'])){
+    $errores['password'] = "no coinciden el mail y el usuario";
+  }
   return $errores;
 
 }
